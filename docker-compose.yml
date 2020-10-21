@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  test_service:
+    container_name: testpy
+    build: .
+    environment:
+      - CONTAINER_NAME=testpy
+    volumes:
+      - ./main.py:/home/testuser/main.py
